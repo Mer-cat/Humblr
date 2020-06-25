@@ -8,11 +8,13 @@
 
 #import "PhotosViewController.h"
 #import "PhotoCell.h"
+#import "UIImageView+AFNetworking.h"
 
 @interface PhotosViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) NSArray *posts;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 
 @end
 
@@ -24,6 +26,10 @@
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     
+    [self fetchPosts];
+}
+
+- (void) fetchPosts {
     NSURL *url = [NSURL URLWithString:@"https://api.tumblr.com/v2/blog/humansofnewyork.tumblr.com/posts/photo?api_key=Q6vHoaVm5L1u2ZAW1fqv3Jw48gFzYVg9P0vH0VHl3GVy6quoGV"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:10.0];
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:nil delegateQueue:[NSOperationQueue mainQueue]];
@@ -46,13 +52,28 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return self.posts.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     PhotoCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PhotoCell" forIndexPath:indexPath];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"This is row %ld", (long)indexPath.row];
+    NSDictionary *post = self.posts[indexPath.row];
+    NSArray *photos = post[@"photos"];
+    
+    // Post may not contain any photos.
+    if (photos) {
+        
+        // Extract first photo
+        NSDictionary *photo = photos[0];
+        NSDictionary *originalSize = photo[@"original_size"];
+        NSString *urlString = originalSize[@"url"];
+        NSURL *url = [NSURL URLWithString:urlString];
+        
+        // Assign photo to cell
+        [cell.photoView setImageWithURL:url];
+    }
     
     return cell;
 }
