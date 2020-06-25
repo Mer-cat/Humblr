@@ -3,19 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		257EEDB8AFF682B8B722F712 /* Pods_Humblr_HumblrUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB801D445184D375B2EB8C7 /* Pods_Humblr_HumblrUITests.framework */; };
+		A45358434FA1C9D33DD19504 /* Pods_HumblrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F2452D57FEB2FC83DFA8C07 /* Pods_HumblrTests.framework */; };
+		B04CD8F3562081A243723216 /* Pods_Humblr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 482FA4BD16ACEEDD345F1E1A /* Pods_Humblr.framework */; };
 		D4BCF07624A4F6C600B72895 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BCF07524A4F6C600B72895 /* AppDelegate.m */; };
 		D4BCF07924A4F6C600B72895 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BCF07824A4F6C600B72895 /* SceneDelegate.m */; };
-		D4BCF07C24A4F6C600B72895 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BCF07B24A4F6C600B72895 /* ViewController.m */; };
 		D4BCF07F24A4F6C600B72895 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4BCF07D24A4F6C600B72895 /* Main.storyboard */; };
 		D4BCF08124A4F6C700B72895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4BCF08024A4F6C700B72895 /* Assets.xcassets */; };
 		D4BCF08424A4F6C700B72895 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4BCF08224A4F6C700B72895 /* LaunchScreen.storyboard */; };
 		D4BCF08724A4F6C700B72895 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BCF08624A4F6C700B72895 /* main.m */; };
 		D4BCF09124A4F6C700B72895 /* HumblrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BCF09024A4F6C700B72895 /* HumblrTests.m */; };
 		D4BCF09C24A4F6C700B72895 /* HumblrUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BCF09B24A4F6C700B72895 /* HumblrUITests.m */; };
+		D4BCF0AC24A4F85F00B72895 /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BCF0AB24A4F85F00B72895 /* PhotosViewController.m */; };
+		D4BCF0AF24A505EA00B72895 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BCF0AE24A505EA00B72895 /* PhotoCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,13 +40,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F2452D57FEB2FC83DFA8C07 /* Pods_HumblrTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HumblrTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EB801D445184D375B2EB8C7 /* Pods_Humblr_HumblrUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Humblr_HumblrUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47F303A982584FDCA32E44FB /* Pods-Humblr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Humblr.debug.xcconfig"; path = "Target Support Files/Pods-Humblr/Pods-Humblr.debug.xcconfig"; sourceTree = "<group>"; };
+		482FA4BD16ACEEDD345F1E1A /* Pods_Humblr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Humblr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F052571E22708EFB7463F17 /* Pods-Humblr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Humblr.release.xcconfig"; path = "Target Support Files/Pods-Humblr/Pods-Humblr.release.xcconfig"; sourceTree = "<group>"; };
+		80A7C2271113B280198F66F5 /* Pods-HumblrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumblrTests.release.xcconfig"; path = "Target Support Files/Pods-HumblrTests/Pods-HumblrTests.release.xcconfig"; sourceTree = "<group>"; };
+		B9C65E52DE769F347D1E7741 /* Pods-HumblrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumblrTests.debug.xcconfig"; path = "Target Support Files/Pods-HumblrTests/Pods-HumblrTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C4F8A9A3747F44E067463560 /* Pods-Humblr-HumblrUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Humblr-HumblrUITests.release.xcconfig"; path = "Target Support Files/Pods-Humblr-HumblrUITests/Pods-Humblr-HumblrUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D4BCF07124A4F6C600B72895 /* Humblr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Humblr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4BCF07424A4F6C600B72895 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D4BCF07524A4F6C600B72895 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D4BCF07724A4F6C600B72895 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		D4BCF07824A4F6C600B72895 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		D4BCF07A24A4F6C600B72895 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D4BCF07B24A4F6C600B72895 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D4BCF07E24A4F6C600B72895 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4BCF08024A4F6C700B72895 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4BCF08324A4F6C700B72895 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +64,11 @@
 		D4BCF09724A4F6C700B72895 /* HumblrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HumblrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4BCF09B24A4F6C700B72895 /* HumblrUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HumblrUITests.m; sourceTree = "<group>"; };
 		D4BCF09D24A4F6C700B72895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4BCF0AA24A4F85F00B72895 /* PhotosViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotosViewController.h; sourceTree = "<group>"; };
+		D4BCF0AB24A4F85F00B72895 /* PhotosViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotosViewController.m; sourceTree = "<group>"; };
+		D4BCF0AD24A505EA00B72895 /* PhotoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
+		D4BCF0AE24A505EA00B72895 /* PhotoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
+		E894ABCBF3E6E65EA33DDD34 /* Pods-Humblr-HumblrUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Humblr-HumblrUITests.debug.xcconfig"; path = "Target Support Files/Pods-Humblr-HumblrUITests/Pods-Humblr-HumblrUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B04CD8F3562081A243723216 /* Pods_Humblr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A45358434FA1C9D33DD19504 /* Pods_HumblrTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +92,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				257EEDB8AFF682B8B722F712 /* Pods_Humblr_HumblrUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7FBF04EFDCA8A71E3976D01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47F303A982584FDCA32E44FB /* Pods-Humblr.debug.xcconfig */,
+				5F052571E22708EFB7463F17 /* Pods-Humblr.release.xcconfig */,
+				E894ABCBF3E6E65EA33DDD34 /* Pods-Humblr-HumblrUITests.debug.xcconfig */,
+				C4F8A9A3747F44E067463560 /* Pods-Humblr-HumblrUITests.release.xcconfig */,
+				B9C65E52DE769F347D1E7741 /* Pods-HumblrTests.debug.xcconfig */,
+				80A7C2271113B280198F66F5 /* Pods-HumblrTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BAD3A06AECF024D52D3623C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				482FA4BD16ACEEDD345F1E1A /* Pods_Humblr.framework */,
+				3EB801D445184D375B2EB8C7 /* Pods_Humblr_HumblrUITests.framework */,
+				2F2452D57FEB2FC83DFA8C07 /* Pods_HumblrTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D4BCF06824A4F6C600B72895 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +129,8 @@
 				D4BCF08F24A4F6C700B72895 /* HumblrTests */,
 				D4BCF09A24A4F6C700B72895 /* HumblrUITests */,
 				D4BCF07224A4F6C600B72895 /* Products */,
+				A7FBF04EFDCA8A71E3976D01 /* Pods */,
+				BAD3A06AECF024D52D3623C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,13 +147,14 @@
 		D4BCF07324A4F6C600B72895 /* Humblr */ = {
 			isa = PBXGroup;
 			children = (
+				D4BCF0A924A4F81E00B72895 /* View Controllers */,
 				D4BCF07424A4F6C600B72895 /* AppDelegate.h */,
 				D4BCF07524A4F6C600B72895 /* AppDelegate.m */,
 				D4BCF07724A4F6C600B72895 /* SceneDelegate.h */,
 				D4BCF07824A4F6C600B72895 /* SceneDelegate.m */,
-				D4BCF07A24A4F6C600B72895 /* ViewController.h */,
-				D4BCF07B24A4F6C600B72895 /* ViewController.m */,
 				D4BCF07D24A4F6C600B72895 /* Main.storyboard */,
+				D4BCF0AD24A505EA00B72895 /* PhotoCell.h */,
+				D4BCF0AE24A505EA00B72895 /* PhotoCell.m */,
 				D4BCF08024A4F6C700B72895 /* Assets.xcassets */,
 				D4BCF08224A4F6C700B72895 /* LaunchScreen.storyboard */,
 				D4BCF08524A4F6C700B72895 /* Info.plist */,
@@ -137,6 +181,15 @@
 			path = HumblrUITests;
 			sourceTree = "<group>";
 		};
+		D4BCF0A924A4F81E00B72895 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D4BCF0AA24A4F85F00B72895 /* PhotosViewController.h */,
+				D4BCF0AB24A4F85F00B72895 /* PhotosViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4BCF0A024A4F6C700B72895 /* Build configuration list for PBXNativeTarget "Humblr" */;
 			buildPhases = (
+				EE67D3B4E54C34E55598BE47 /* [CP] Check Pods Manifest.lock */,
 				D4BCF06D24A4F6C600B72895 /* Sources */,
 				D4BCF06E24A4F6C600B72895 /* Frameworks */,
 				D4BCF06F24A4F6C600B72895 /* Resources */,
+				05BCAAFE64B60960FABE1048 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4BCF0A324A4F6C700B72895 /* Build configuration list for PBXNativeTarget "HumblrTests" */;
 			buildPhases = (
+				EADBCF965181FAC1AB8A6839 /* [CP] Check Pods Manifest.lock */,
 				D4BCF08824A4F6C700B72895 /* Sources */,
 				D4BCF08924A4F6C700B72895 /* Frameworks */,
 				D4BCF08A24A4F6C700B72895 /* Resources */,
@@ -179,9 +235,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4BCF0A624A4F6C700B72895 /* Build configuration list for PBXNativeTarget "HumblrUITests" */;
 			buildPhases = (
+				B1977F60CF736DACD7758590 /* [CP] Check Pods Manifest.lock */,
 				D4BCF09324A4F6C700B72895 /* Sources */,
 				D4BCF09424A4F6C700B72895 /* Frameworks */,
 				D4BCF09524A4F6C700B72895 /* Resources */,
+				8E14AD9D845F71ADFC7C64B4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,14 +320,118 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05BCAAFE64B60960FABE1048 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Humblr/Pods-Humblr-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Humblr/Pods-Humblr-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Humblr/Pods-Humblr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E14AD9D845F71ADFC7C64B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Humblr-HumblrUITests/Pods-Humblr-HumblrUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Humblr-HumblrUITests/Pods-Humblr-HumblrUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Humblr-HumblrUITests/Pods-Humblr-HumblrUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1977F60CF736DACD7758590 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Humblr-HumblrUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EADBCF965181FAC1AB8A6839 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HumblrTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE67D3B4E54C34E55598BE47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Humblr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D4BCF06D24A4F6C600B72895 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4BCF07C24A4F6C600B72895 /* ViewController.m in Sources */,
 				D4BCF07624A4F6C600B72895 /* AppDelegate.m in Sources */,
+				D4BCF0AF24A505EA00B72895 /* PhotoCell.m in Sources */,
 				D4BCF08724A4F6C700B72895 /* main.m in Sources */,
+				D4BCF0AC24A4F85F00B72895 /* PhotosViewController.m in Sources */,
 				D4BCF07924A4F6C600B72895 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +599,7 @@
 		};
 		D4BCF0A124A4F6C700B72895 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47F303A982584FDCA32E44FB /* Pods-Humblr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +617,7 @@
 		};
 		D4BCF0A224A4F6C700B72895 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F052571E22708EFB7463F17 /* Pods-Humblr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -471,6 +635,7 @@
 		};
 		D4BCF0A424A4F6C700B72895 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9C65E52DE769F347D1E7741 /* Pods-HumblrTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -491,6 +656,7 @@
 		};
 		D4BCF0A524A4F6C700B72895 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80A7C2271113B280198F66F5 /* Pods-HumblrTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -511,6 +677,7 @@
 		};
 		D4BCF0A724A4F6C700B72895 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E894ABCBF3E6E65EA33DDD34 /* Pods-Humblr-HumblrUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7ZHC9LK6JK;
@@ -529,6 +696,7 @@
 		};
 		D4BCF0A824A4F6C700B72895 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4F8A9A3747F44E067463560 /* Pods-Humblr-HumblrUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7ZHC9LK6JK;
